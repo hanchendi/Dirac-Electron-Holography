@@ -205,6 +205,7 @@ E=7
 x = loadmat('./data_7.mat')
 phi_target=x.get('phi')
 
+%% The input for this function range from -5 to 20
 def f_and_grad(x):
     
     w=np.zeros((1,4,64,64))
