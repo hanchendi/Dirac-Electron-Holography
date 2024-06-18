@@ -1,6 +1,7 @@
 clear
 clc
 
+%% Energy range from 5 to 10
 E_choose=[5 5.5 6 6.5 7 7.5 8 8.5 9 9.5 10];
 E_idx=11;
 load(['data_E_',num2str(E_idx),'.mat'])
