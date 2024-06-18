@@ -8,6 +8,7 @@ y_choose=linspace(-1,1,N);
 [xx,yy]=meshgrid(x_choose,y_choose);
 zz=xx+sqrt(-1)*yy;
 
+%% Generate a plane wave with energy k0
 k0=10;
 s0=1;
 
