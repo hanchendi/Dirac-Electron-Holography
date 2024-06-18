@@ -199,6 +199,7 @@ model.to(device)
 model.load_state_dict(torch.load('./model_1'))
 model.eval()
 
+## Energy range from 5 to 10, and potential range from -5 to 20.
 E_min=5
 E_max=10
 E_choose=[5,5.5,6,6.5,7,7.5,8,8.5,9,9.5,10]
@@ -215,7 +216,8 @@ def f_and_grad(x):
     w=phi_target
     w=w.astype(np.float32)
     w=torch.tensor(w).to(device)
-    
+
+    ## When input to the neural network, both energy and potential are normalized between 0 to 1.
     X_input=(x+5)/25
     temp_x=np.zeros((1, nz))
     temp_x[0,0:nz-1]=X_input
