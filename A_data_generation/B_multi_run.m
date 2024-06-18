@@ -12,7 +12,8 @@ for idx=1:1
     score_gather=zeros(N_single,1);
     
     for i=1:N_single
-        
+
+        %% Generate energy range from 5 to 10 with voltage from -5 to 20.
         E_min=5;
         E_max=10;
         V_min=-5;
