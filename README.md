@@ -1,8 +1,10 @@
 Simulation code for Dirac electron holography. Uploaded 04/22/2024.
+The energy range from 5 to 10, and potential range from -5 to 20.
+For MMP input, both energy and potential are not normalized. For neural network input, both potential and energy are normalized from 0 to 1.
 
 -----A_data_generation----- Matlab code to generate training data. 
 A_create_poles.m: This will generate the matrix that is needed for the MMP method. 
-B_multi_run.m: This will generate random numbers for energy and potential that are used to compute MMP. The energy range from 5 to 10, and potential range from -5 to 20.
+B_multi_run.m: This will generate random numbers for energy and potential that are used to compute MMP. 
 C_test.m: Used to plot the sample data.
 MMP_single.m: A Matlab function. The input will be the potential and energy, and the output will be the wave function and the error. The input is not normalized, which means the energy range from 5 to 10, and potential range from -5 to 20.
 
