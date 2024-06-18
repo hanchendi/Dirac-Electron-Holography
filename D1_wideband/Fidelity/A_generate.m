@@ -1,6 +1,7 @@
 clear
 clc
 
+%% Fidelity is computed using energy range from 5 to 10, the potential is not normalized when input to the MMP
 E_choose=linspace(5,10,500);
 V=[0.6307    2.0731   -3.3894   15.2217    3.0394    0.6676];
 F_circle=zeros(1,500);
