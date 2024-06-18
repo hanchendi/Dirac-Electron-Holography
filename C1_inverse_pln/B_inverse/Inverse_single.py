@@ -199,13 +199,14 @@ model.to(device)
 model.load_state_dict(torch.load('./model_1'))
 model.eval()
 
-E_min=3
-E_max=7
+## E range from 5 to 10 is normalized to 0 to 1
+E_min=5
+E_max=10
 E=7
 x = loadmat('./data_7.mat')
 phi_target=x.get('phi')
 
-%% The input for this function range from -5 to 20
+## The input for this function range from -5 to 20
 def f_and_grad(x):
     
     w=np.zeros((1,4,64,64))
@@ -213,7 +214,7 @@ def f_and_grad(x):
     w=w.astype(np.float32)
     w=torch.tensor(w).to(device)
     
-    X_input=(x+5)/20
+    X_input=(x+5)/25
     temp_x=np.zeros((1, nz))
     temp_x[0,0:nz-1]=X_input
     temp_x[0,nz-1]=(E-E_min)/(E_max-E_min)
