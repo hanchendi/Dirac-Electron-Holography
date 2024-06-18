@@ -1,0 +1,7 @@
+All potential are listed from left to right, from lower to upper. See Figure.1 (a) for detail.
+
+Narrow band
+V=[5.9029   18.7813    8.3013    0.3197    8.0768    8.9806]
+
+Wide band
+V=[0.6307    2.0731   -3.3894   15.2217    3.0394    0.6676]

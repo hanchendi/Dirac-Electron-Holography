@@ -1,0 +1,10 @@
+For single target design. All potential are listed from left to right, from lower to upper. See Figure.1 (a) for detail.
+
+E=8, circle
+V=[7.9009    1.3594   -3.6537   15.4895   18.4735    6.2560]
+
+E=8, stadium
+V=[-0.2609   16.6931   -4.4400    6.7785   12.4371   14.7132]
+
+E=8, star
+V=[19.9900    1.7339   17.7675   -0.0742   16.7529    6.4960]
