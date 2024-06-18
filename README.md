@@ -1,13 +1,13 @@
 Simulation code for Dirac electron holography. Uploaded 04/22/2024.
 
 -----A_data_generation----- Matlab code to generate training data. 
-A_create_poles.m: This will generate the matrix that is needed for the MMP method.
-B_multi_run.m: This will generate random numbers for energy and potential that are used to compute MMP.
+A_create_poles.m: This will generate the matrix that is needed for the MMP method. 
+B_multi_run.m: This will generate random numbers for energy and potential that are used to compute MMP. The energy range from 5 to 10, and potential range from -5 to 20.
 C_test.m: Used to plot the sample data.
 MMP_single.m: A Matlab function. The input will be the potential and energy, and the output will be the wave function and the error.
 
 -----B1_neural_network-----Python code to train the neural network. The code follows a standard generator structure but with a residual connection. After the neural network is trained, it will save the first one thousand data to compute the train, validate, and test errors.
-Generator_Res.py: Standard MSE loss used in the paper.
+Generator_Res.py: Standard MSE loss used in the paper. The energy and potential for both train/validate/test data are normalized between 0 to 1.
 Generator_Res_custom.py: Physical loss follows [Chen, Mingkun, et al. "High speed simulation and freeform optimization of nanophotonic devices with physics-augmented deep learning." ACS Photonics 9.9 (2022): 3110-3123.], but the physical loss does not give any advantages for this problem.
 
 ------B2_train_result-----Matlab code to plot the training result. It is also useful for checking the prediction and nearest training data around it.
