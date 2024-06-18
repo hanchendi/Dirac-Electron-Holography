@@ -195,6 +195,7 @@ N_epoch=1000
 model = Generator()
 model.to(device)
 
+######## Normalized train, validate and test data from 0 to 1 ########
 ######## Train_data #########
 X_input_train=[]
 y_input_train=[]
